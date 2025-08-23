@@ -35,7 +35,7 @@ SETUP (Debian/Ubuntu examples)
      -H "Authorization: Bearer 0000000000000000000000000000000000000000" \
      -H "Content-Type: application/json"<br>
    ```
-   Look in the JSON for: "result":[{"id":"00000000000000000000000000000000", ...
+   Look in the JSON for: "result":[{"id":"**00000000000000000000000000000000**", ...
 
 4) Configure this script (see CONFIG section)<br>
    $api_token: Cloudflare API token with Zone:DNS:Edit<br>
