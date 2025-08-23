@@ -1,6 +1,6 @@
 # Cloudflare Dynamic DNS Update PHP script
 
-If you have your own domain name, you can use Cloudflare's free services to get free dynamic IP updates using this script! Why pay DynDNS for this when this script does the same thing on your own domain name for free! Don't have a domain name? Cloudflare offers wholesale priced domain names at their cost. I have all of my domain names registered with Cloudflare. .com and .net domains are like $11 a year and included is free DNS hosting with free one-click DNSSEC setup! Cloudflare even offers free DNS hosting for your domain names registered at another registrar! 
+If you have your own domain name, you can use Cloudflare's free services to get free dynamic IP updates using this script! Why pay DynDNS for this when this script does the same thing on your own domain name for free?! Don't have a domain name? Cloudflare offers wholesale priced domain names at their cost. I have all of my domain names registered with Cloudflare. .com and .net domains are like $11 a year and included is free DNS hosting with free one-click DNSSEC setup! Cloudflare even offers free DNS hosting for your domain names registered at another registrar! 
 
 This script updates your current dynamic IP address in your DNS records which you have hosted at Cloudflare. If you want, you can also proxy your website through Cloudflare's proxy to hide your IP address. 
 
