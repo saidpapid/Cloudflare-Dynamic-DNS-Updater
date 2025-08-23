@@ -4,18 +4,18 @@ If you have your own domain name, you can use Cloudflare's free services to get 
 
 This script updates your current dynamic IP address in your DNS records which you have hosted at Cloudflare. If you want, you can also proxy your website through Cloudflare's proxy to hide your IP address. 
 
-WHAT THIS DOES
+**WHAT THIS DOES**
 - Checks your current public IP using Cloudflare’s 1.1.1.1 trace endpoint.
 - Looks up an A record in Cloudflare DNS for $record_name.
 - Only updates the record if your IP changed (avoids unnecessary API calls).
 
-RECOMMENDED EDITOR<br>
+**RECOMMENDED EDITOR**<br>
 Use a code editor that respects Unix line endings (e.g., [Notepad++](https://notepad-plus-plus.org/) on Windows).
 
-TYPICAL HOST<br>
+**TYPICAL HOST**<br>
 Runs great on a small always-on Linux box (e.g., [Raspberry Pi 5](https://www.mynetblog.com/Raspberry-Pi/)).<br>
 
-SETUP (Debian/Ubuntu examples)
+**SETUP (Debian/Ubuntu examples)**
 
 1) Install prerequisites:<br>
    `$ sudo apt update`<br>
@@ -53,7 +53,7 @@ SETUP (Debian/Ubuntu examples)
    * The `-q` flag suppresses normal output; errors still log to the history file.
    * Ensure the user running cron can write to the log file paths set below.
 
-OPTIONAL LOGIN DISPLAY<br>
+**OPTIONAL LOGIN DISPLAY**<br>
    $login_display_file prints “current IP + last-change time”.<br>
    Add to `~/.bashrc` (or `~/.profile`):
    ```bash
@@ -61,6 +61,6 @@ OPTIONAL LOGIN DISPLAY<br>
           cat /home/user/log/ip-change-display.txt
       fi
    ```
-LOGGING
+**LOGGING**
 * $history_log_file appends a timestamp each time the IP changes (no IP values).<br>
 * Errors are appended with an “ERROR:” prefix and timestamp.
